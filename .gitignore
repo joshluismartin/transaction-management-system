@@ -1,0 +1,17 @@
+# Backend (Rails)
+backend/log/*
+backend/tmp/*
+backend/.bundle
+backend/.env*
+!backend/.env.example
+
+# Frontend (React)
+frontend/node_modules/
+frontend/dist/
+frontend/.env*
+!frontend/.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
