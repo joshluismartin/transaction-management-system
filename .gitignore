@@ -1,17 +1,74 @@
+# ==========================================
 # Backend (Rails)
+# ==========================================
 backend/log/*
 backend/tmp/*
 backend/.bundle
+backend/vendor/bundle
 backend/.env*
 !backend/.env.example
+backend/storage/*
+!backend/storage/.keep
+backend/tmp/pids/*
+!backend/tmp/pids/.keep
 
-# Frontend (React)
+# ==========================================
+# Frontend (React/Vite)
+# ==========================================
 frontend/node_modules/
 frontend/dist/
+frontend/build/
 frontend/.env*
 !frontend/.env.example
+frontend/.vite/
+frontend/coverage/
 
-# OS files
+# ==========================================
+# Neovim
+# ==========================================
+# Swap files
+*.swp
+*.swo
+*.swn
+
+# Backup files
+*~
+*.bak
+
+# Neovim session files
+Session.vim
+.session
+
+# Neovim undo history
+*.un~
+
+# ==========================================
+# OS Files
+# ==========================================
+# macOS
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+._*
 
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+# ==========================================
+# Other IDEs
+# ==========================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ==========================================
+# General
+# ==========================================
+*.log
+.cache/
