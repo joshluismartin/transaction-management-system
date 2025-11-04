@@ -2,11 +2,11 @@
 
 A full-stack web application for managing financial transactions with a Rails API backend and React frontend.
 
-## 📋 Overview
+## Overview
 
 This application allows users to view and create financial transactions. Transaction data is stored in a CSV file, and the system provides a clean, modern interface for managing transaction records.
 
-## ✨ Features
+## Features
 
 - **View Transactions**: Display all transactions in a responsive table
 - **Add Transactions**: Create new transactions via an accessible modal form
@@ -15,7 +15,7 @@ This application allows users to view and create financial transactions. Transac
 - **RESTful API**: Clean API architecture following REST principles
 - **Responsive Design**: Works on desktop and mobile devices
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Backend
 - **Ruby on Rails 7.1** - API framework
@@ -30,10 +30,10 @@ This application allows users to view and create financial transactions. Transac
 - **Headless UI** - Accessible components
 - **Axios** - HTTP client
 
-## 📁 Project Structure
+## Project Structure
 
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -83,7 +83,7 @@ You need to run both servers simultaneously.
 
 Open your browser to the URL shown in the Vite terminal (typically http://localhost:3001)
 
-## 📡 API Documentation
+## API Documentation
 
 ### Base URL
 
@@ -98,7 +98,7 @@ GET /transactions
 
 If Response (200 OK):
 
-[
+```[
   {
     "transaction_date": "2025-03-01",
     "account_number": "7289-3445-1121",
@@ -106,7 +106,7 @@ If Response (200 OK):
     "amount": "150.00",
     "status": "Settled"
   }
-]
+]```
 
 #### Create Transaction
 
@@ -114,27 +114,27 @@ POST /transactions
 
 Request Body:
 
-{
+```{
   "transaction_date": "2025-03-15",
   "account_number": "1234-5678-9012",
   "account_holder_name": "John Doe",
   "amount": "100.00"
-}
+}```
 
 If Response (201 Created):
 
-{
+```{
   "transaction_date": "2025-03-15",
   "account_number": "1234-5678-9012",
   "account_holder_name": "John Doe",
   "amount": "100.00",
   "status": "Pending"
-}
+}```
 
 Note: Status is randomly assigned by the backend (Pending, Settled, or Failed)
 
 
-## 🎨 Features Explained
+## Features Explained
 
 ### Transaction Table
 - Displays all transactions in a clean, sortable table
@@ -158,7 +158,7 @@ Note: Status is randomly assigned by the backend (Pending, Settled, or Failed)
 - CSV format for simplicity and portability
 - Automatic status assignment on creation
 
-## 🧪 Testing
+## Testing
 
 ### Test Adding a Transaction
 
@@ -172,7 +172,7 @@ Note: Status is randomly assigned by the backend (Pending, Settled, or Failed)
 4. Verify transaction appears in table
 5. Refresh page and verify it's still there
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Network Error" in browser console
 
@@ -193,7 +193,7 @@ Note: Status is randomly assigned by the backend (Pending, Settled, or Failed)
 3. Check Rails logs for errors
 
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Edit existing transactions
 - Delete transactions
@@ -205,7 +205,7 @@ Note: Status is randomly assigned by the backend (Pending, Settled, or Failed)
 - Export to PDF/Excel
 - Data visualization (charts/graphs)
 
-## 📝 Development Notes
+## Development Notes
 
 ### Design Decisions
 
@@ -227,6 +227,6 @@ Note: Status is randomly assigned by the backend (Pending, Settled, or Failed)
 - Small production bundle
 - No CSS file management
 
-## 👤 Author
+## Author
 
 Joshua Luis B. Martin - (https://github.com/joshluismartin/transaction-management-system.git)
