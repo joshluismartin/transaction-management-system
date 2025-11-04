@@ -45,7 +45,7 @@ This application allows users to view and create financial transactions. Transac
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/joshluismartin/transaction-management-system.git
    cd transaction-management-system
    ```
 
