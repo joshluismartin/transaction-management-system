@@ -98,7 +98,8 @@ GET /transactions
 
 If Response (200 OK):
 
-```[
+```bash
+[
   {
     "transaction_date": "2025-03-01",
     "account_number": "7289-3445-1121",
@@ -106,7 +107,8 @@ If Response (200 OK):
     "amount": "150.00",
     "status": "Settled"
   }
-]```
+]
+```
 
 #### Create Transaction
 
@@ -114,22 +116,26 @@ POST /transactions
 
 Request Body:
 
-```{
+```bash
+{
   "transaction_date": "2025-03-15",
   "account_number": "1234-5678-9012",
   "account_holder_name": "John Doe",
   "amount": "100.00"
-}```
+}
+```
 
 If Response (201 Created):
 
-```{
+```bash
+{
   "transaction_date": "2025-03-15",
   "account_number": "1234-5678-9012",
   "account_holder_name": "John Doe",
   "amount": "100.00",
   "status": "Pending"
-}```
+}
+```
 
 Note: Status is randomly assigned by the backend (Pending, Settled, or Failed)
 
